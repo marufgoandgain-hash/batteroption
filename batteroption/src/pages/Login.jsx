@@ -110,7 +110,8 @@ function Login({ onLogin }) {
           src="https://pnglove.com/data/img/240_osSR.jpg"
           alt="login with facebook"
           width="40"
-        />
+          
+          />
 
       </button>
     </div>
