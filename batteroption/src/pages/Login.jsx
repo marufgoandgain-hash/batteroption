@@ -94,7 +94,7 @@ function Login({ onLogin }) {
       <hr style={{ width: "250px" }} />
 
       {/* Google Login */}
-      <button onClick={handleGoogle} href="/profile">
+      <button onClick={handleGoogle}>
         <img
           src="https://www.citypng.com/public/uploads/preview/google-logo-icon-gsuite-hd-701751694791470gzbayltphh.png"
           alt="login with google"
@@ -105,7 +105,7 @@ function Login({ onLogin }) {
       <br /><br />
 
       {/* Facebook Login */}
-      <button onClick={handleFacebook} href="/profile">
+      <button onClick={handleFacebook} >
         <img
           src="https://pnglove.com/data/img/240_osSR.jpg"
           alt="login with facebook"

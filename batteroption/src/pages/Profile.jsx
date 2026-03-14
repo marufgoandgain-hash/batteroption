@@ -52,7 +52,7 @@ function Profile({ openVideo }) {
 
   return (
     <div style={{ textAlign: "center", maxWidth: "500px", margin: "auto" }}>
-      <h2>Your Profile</h2>
+      <h2> Profile</h2>
 
       <img
         src={userData.profileimg || "/defaultProfile.png"}
@@ -61,11 +61,11 @@ function Profile({ openVideo }) {
         style={{ borderRadius: "50%" }}
       />
 
-      <h3>Name: {userData.fullname}</h3>
+      <h3>{userData.fullname}</h3>
       <p>Email: {userData.gmail}</p>
-      <p>Mobile: {userData.mobilenumber}<a href="/setmobile">+</a></p>
-      <p>Address: {userData.address}<a href="/setaddress">+</a></p>
-      <p>Date of Birth: {userData.dateofbirth}<a href="/setdateofbirth">+</a></p>
+      <p>Mobile: {userData.mobilenumber}</p>
+      <p>Address: {userData.address}</p>
+      <p>Date of Birth: {userData.dateofbirth}</p>
 
       {/* Username & Password Section */}
       {!userData.username || !userData.password ? (
@@ -105,7 +105,8 @@ function Profile({ openVideo }) {
 
       {/* Open Video Page Button */}
       <button
-      href=""
+        onClick={openVideo}
+        style={{ marginTop: "20px", padding: "10px 20px" }}
       >
         Open Video Page
       </button>
